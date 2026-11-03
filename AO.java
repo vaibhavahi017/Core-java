@@ -1,0 +1,35 @@
+interface AO
+{
+	void ao(int a , int b);
+}
+
+
+
+class Test
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("main Start");
+
+		
+		AO ao1=(int a , int b)->{
+			int c = a+b;
+			System.out.println("the result is : "+c);
+	};
+	
+	//AO class reference through to call the interface method without cannot execute 
+	//with given argument
+	ao1.ao(10,20) ; 
+	
+	
+	AO ao2 =(int c,int d) ->{
+		int e =c-d;
+		System.out.println("The Subtractio result is : "+e);
+	};
+	ao2.ao(20,10);
+	
+	Ao ao3 =(int a,
+			System.out.println("main end ");
+	
+}
+}

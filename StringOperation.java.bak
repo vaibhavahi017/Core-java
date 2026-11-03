@@ -1,0 +1,21 @@
+interface StringOperation
+{
+	void stringoperation(String s);
+}
+
+
+
+class Test2 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Main Start");
+		
+		StringOperation s1 = (String s)->{System.out.println(s.length());};
+		s1.stringOperation("vaibhav ahir");
+		
+		
+		System.out.println("Main end");
+		
+	}
+}
